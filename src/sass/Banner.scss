@@ -1,0 +1,257 @@
+$black : #000;
+$gray-low: #E1E1E1;
+$organce: #DC7633;
+$mobile-width: 480px;
+$tablet-width: 768px;
+
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ }  
+ 
+
+.banner {
+    position: relative;
+    width: 100vw;
+    height: 820px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    // margin-top: 55px;
+    // pointer-events: none;
+    
+    animation: vb 0.5s linear 0s forwards;
+        @keyframes vb {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+    &__video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        animation: vf 3s linear 0s forwards;
+        @keyframes vf {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @media (min-aspect-ratio: 16/9) {
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+
+    @include mobile {
+        width: 100vw;
+        height: 460px
+    }
+
+    &-container {
+        width: 960px;
+        height: 100%;
+        // background: white;
+        display: flex;
+        flex-direction: row;
+        z-index: 1;
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
+        &-content {
+            width: 50%;
+            height: inherit;
+            // background: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            @include mobile{
+                width: 100%;
+            }
+            &__info {
+                margin-left: 50px;
+                position: absolute;
+                top: 160px;
+                font: 400 1em/1.5 "Neuton";
+                // background: $black;
+                color: rgba($color: $gray-low, $alpha: .7);
+                text-align: center;
+                user-select: none;
+                margin-bottom: 50px;
+                opacity: 0;
+                animation: infoA 0.5s ease-in 0.6s 1 forwards;
+                @keyframes infoA {
+                    0% {
+                        top: 180px;
+                        opacity: 0;
+                    }
+                    100% {
+                        top: 240px;
+                        opacity: 1;
+                    }
+                }
+                @include mobile{
+                    transform: scale(0.5);
+                    position: absolute;
+                    top: -160px;
+                    margin-left: 0px;
+                    margin-top: -180px;
+                }
+                p {
+                    text-transform: uppercase;
+                    letter-spacing: 0.3em;
+                    display: inline-block;
+                    border: 4px double rgba($color: $gray-low, $alpha: .7);
+                    border-width: 4px 0;
+                    padding: 1em 0em;
+                    width: 32em;
+                    span {
+                        font: 700 4em/1 "Oswald", sans-serif;
+                        letter-spacing: 0;
+                        padding: .25em 0 .325em;
+                        display: block;
+                        margin: 0 auto;
+                        text-shadow: 0 0 80px rgba(255,255,255,.7);
+                  
+                  /* Clip Background Image */
+                  
+                        background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+                        background-clip: text;
+                  
+                  /* Animate Background Image */
+                  
+                        color: transparent;
+                        animation: aitf 80s linear infinite;
+                  
+                  /* Activate hardware acceleration for smoother animations */
+                  
+                        transform: translate3d(0,0,0);
+                        backface-visibility: hidden;
+                        @keyframes aitf {
+                            0% { background-position: 0% 50%; }
+	                        100% { background-position: 100% 50%; }
+                        }
+                    }
+                }
+            }
+            &__text {
+                width: 460px;
+                position: absolute;
+                opacity: 0;
+                animation: textA 0.3s ease-in 1.3s 1 forwards;
+                bottom: 240px;
+                @keyframes textA {
+                    0% {
+                        opacity: 0;
+                        bottom: 200px;
+                    }
+                    100% {
+                        opacity: 1;
+                        bottom: 220px;
+                    }
+                }
+
+                @include mobile {
+                    transform: scale(0.55);
+                    position: absolute;
+                    width: 240px;
+                    top: 260px;
+                    margin-right: 200px;
+
+                }
+                p {
+                    margin-left: 70px;
+                    font-size: 30px;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    text-transform: uppercase; 
+                    color: white;
+                    font-weight: 800;
+                    user-select: none;
+                    line-height: 1;
+                    cursor: pointer;
+                    &:hover {
+                        transition: 0.3s;
+                        color: $organce;
+                    }
+                    span {
+                        cursor: auto;
+                        cursor: pointer;
+                        font-size: 18px;
+                        text-transform: lowercase;
+                        color: white;
+                        font-weight: 400;                        // margin-left: 70px;
+                    }
+                }
+            }
+        }
+
+        &-image {
+            width: 50%;
+            height: inherit;
+            pointer-events: none;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            margin-left: 50px;
+            position: relative;
+            @include mobile {
+                &__box {
+                    width: 150px;
+                    height: 150px;
+                    background: #ccc;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    position: absolute;
+                    right: -80px;
+                    bottom: 60px;
+                    opacity: 0;
+                    animation: mbimgA 0.3s ease-in 1.3s 1 forwards;
+                    @keyframes mbimgA {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            img {
+                width: 450px;
+                height: 100%;
+                // background: #ccc;
+                margin-left: 50px;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                animation: imageA 0.4s ease-in 1s 1 forwards;
+                @keyframes imageA {
+                    0% {
+                        margin-left: 80px;
+                        opacity: 0;
+                    }
+                    100% {
+                        margin-left: 50px;
+                        opacity: 1;
+                    }
+                }
+                @include mobile {
+                    width: 120px;
+                    height: 100%;
+                    position: relative;
+                    margin-left: 20px;
+                    animation: none;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
