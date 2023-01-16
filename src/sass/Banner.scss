@@ -200,6 +200,7 @@ $tablet-width: 768px;
             align-items: flex-end;
             margin-left: 50px;
             position: relative;
+            user-select: none;
             @include mobile {
                 &__box {
                     width: 150px;

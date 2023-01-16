@@ -24,33 +24,127 @@ $color-pick: rgba(225, 225, 225, 0.05);
     &-container {
         width: 980px;
         height: fit-content;
-        background-color: white;
+        // background-color: #ffbcbc;
         padding-top: 20px;
         padding-bottom: 20px;
+        position: relative;
+        @include mobile {
+            width: 95vw;
+            height: fit-content;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        
         div {
             h1 {
+                user-select: none;
+                font-size: 35px;
                 font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 900;
-                transition: 0.3s;
-                background-color: aqua;
-                position: relative;
-                &::before {
-                    content: '';
-                    width: 10px;
-                    height: 10px;
-                    position: absolute;
-                    background-color: orange;
-                    bottom: 0;
+                opacity: 0;
+                animation: introToLeft 0.5s ease-in  0.5s 1 forwards;
+                @keyframes introToLeft {
+                    0% {
+                        opacity: 0;
+                        margin-top: 20px;
+                    }
+                    100% {
+                        opacity: 1;
+                        margin-top: 0px;
+                    }
                 }
-                // &::after {
-                //     content: '';
-                //     width: 10px;
-                //     height: 10px;
-                //     background-color: #000000;
-                //     position: absolute;
-                // }
-                &:hover {
-                    color: $organce
+                @include mobile {
+                    font-size: 26px;
+                }
+                &::before {
+                    position: absolute;
+                    content: ' ';
+                    // width: 10px;
+                    height: 10px;
+                    background-image: linear-gradient(to left, purple, red);
+                    top: 65px;
+                    animation: toLeft 1s ease-in .5s 1 forwards;
+                    @keyframes toLeft {
+                        0% {
+                            width: 1px;
+                        }
+                        100% {
+                            width: 100%;
+                        }
+                    }
+                    @include mobile{
+                        top: 30px;
+                        height: 5px;
+                    }
+                }
+            }
+        }
+        &-info {
+            width: 960px;
+            height: fit-content;
+            display: flex;
+            padding-top: 40px;
+            @include mobile {
+                padding-top: 20px;
+                width: 0;
+            }
+            &__image {
+                display: flex;
+                flex-direction: column;
+                 align-items: center;
+
+                &_detail {
+                    width: 240px;
+                    height: 240px;
+                    background-color: aliceblue;
+                    border-radius: 50%;
+                    border: 2px solid gray;
+                    overflow: hidden;
+                    @include mobile{
+                        width: 140px;
+                        height: 140px;
+                    }
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                &_name {
+                    h2 {
+                        font-size: 25px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+            &__content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                @include mobile {
+                    // width: calc(100% - 116px);
+                }
+                &__introduces {
+                    p {
+                        font-family: 'Source Sans Pro', sans-serif;
+                        font-size: 18px;
+                        padding-left: 24px;
+                        line-height: 28px;
+                        font-weight: bold;
+                        color: gray;
+                        user-select: none;
+                        cursor: pointer;
+                        transition: 0.5s;
+                        &:hover {
+                            color: black;
+                        }
+                        @include mobile {
+                            font-size: 14px;
+                            line-height: 1;
+                            width: 220px;
+                            color: black;
+                            padding-left: 10px;
+                        }
+                    }
                 }
             }
         }
