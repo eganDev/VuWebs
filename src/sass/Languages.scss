@@ -1,0 +1,46 @@
+$organce: #d86213;
+$mobile-width: 480px;
+$tablet-width: 768px;
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ }  
+ 
+
+.Languages {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    &-style {
+        cursor: pointer;
+        user-select: none;
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 20px 10px 20px;
+        border: 2px solid $organce;
+        border-radius: 10px ;
+        margin-right: 10px;
+        margin-top: 10px;
+        font-weight: bold;
+        transition: 0.4s;
+        background: white;
+        @include mobile {
+            padding: 5px 10px 5px 10px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: normal;
+        }
+        &:hover {
+            background-image: linear-gradient(to right, purple, red);
+            color: white
+        }
+    }
+}

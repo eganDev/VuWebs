@@ -179,6 +179,9 @@ $tablet-width: 768px;
                         transition: 0.3s;
                         color: $organce;
                     }
+                    @include mobile {
+                        color: #DC7633;
+                    }
                     span {
                         cursor: auto;
                         cursor: pointer;

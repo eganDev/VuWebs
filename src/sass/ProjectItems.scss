@@ -1,0 +1,142 @@
+$organce: #d86213;
+$mobile-width: 480px;
+$tablet-width: 768px;
+$color-pick: rgba(225, 225, 225, 0.05);
+
+
+@mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
+    @content;   
+   } 
+}  
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {       
+    @content;   
+  } 
+ }  
+
+.projectItems {
+  width: 100%;
+  height: fit-content;
+  // background: rgb(192, 187, 187);
+  // box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-top: 40px;
+  border-radius: 10px;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 23px 0px 26px 0px;
+    @include mobile {
+      width: 95vw;
+      flex-direction: column;
+      padding: 0px;
+    }
+    // flex-direction: column;
+    &__image {
+      width: 440px;
+      height: 240px;
+      // background-color: #d86213;
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      transition-property: all;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition: 0.5s;
+      @include mobile {
+        width: 320px;
+        height: 180px;
+      }
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 25px;
+      }
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    &__title {
+      font-family: 'Source Sans Pro', sans-serif;
+      // margin-top: 20px;
+      font-weight: 900;
+      font-size: 16px;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include mobile{
+        font-size: 12px;
+        margin-top: 10px;
+      }
+      h1 {
+        border-right: 4px solid red;
+        padding-right: 10px;
+        @include mobile {
+        }
+      }
+      p {
+        padding-left: 10px;
+        text-decoration: none;
+        color: $organce;
+        transition: 0.5s;
+        font-size: 18px;
+        cursor: pointer;
+        @include mobile {
+          font-size: 16px;
+        }
+        &:hover {
+          transform: scale(1.1);
+          color: red;
+        }
+      }
+    }
+
+    &-btn {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      @include mobile {
+        padding: 0px 20px 0px 20px;
+      }
+      &__tech {
+        width: fit-content;
+        height: fit-content;
+        padding: 10px 20px 10px 20px;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        border: 2px solid $organce;
+        user-select: none;
+        @include mobile {
+          padding: 5px 10px 5px 10px;
+        }
+        p {
+          font-weight: bold;
+          color: black;
+          @include mobile {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+    &__script {
+      font-size: 20px;
+      font-family: 'Source Sans Pro', sans-serif;
+      text-align: center;
+      @include mobile {
+        font-size: 16px;
+        padding: 0px 20px 0px 20px;
+      }
+      p {
+        margin-top: 20px;
+        @include mobile {
+          margin-top: 10px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
