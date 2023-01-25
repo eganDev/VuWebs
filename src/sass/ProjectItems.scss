@@ -29,6 +29,8 @@ $color-pick: rgba(225, 225, 225, 0.05);
       width: 95vw;
       flex-direction: column;
       padding: 0px;
+      padding-bottom: 30px;
+      border-bottom: 2px solid $organce;
     }
     // flex-direction: column;
     &__image {
@@ -40,7 +42,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
       cursor: pointer;
       transition-property: all;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      transition: 0.5s;
+      transition: 0.3s;
       @include mobile {
         width: 320px;
         height: 180px;
@@ -138,5 +140,13 @@ $color-pick: rgba(225, 225, 225, 0.05);
         }
       }
     }
+  }
+}
+
+.project-info {
+  // background: #000;
+  width: 440px;
+  @include mobile {
+    width: 340px;
   }
 }
