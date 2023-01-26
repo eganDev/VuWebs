@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 import "../sass/Header.scss"
 import logo from "../asset/logo1.png"
@@ -8,7 +8,8 @@ import { GrMail } from "react-icons/gr";
 
 export default function Header() {
 
-  const [activeNav, setActiveNav] = useState(false);
+  const [activeNav, setActiveNav] = useState(false);  
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleClick = () => {
     setActiveNav(activeNav => !activeNav);
@@ -16,6 +17,20 @@ export default function Header() {
   
   let active = activeNav ? "active" : "";
   let activeMenu = activeNav ? "activeMd" : "";
+
+  const handleScroll = () => {
+    const pos = window.pageYOffset;
+    setScrollPosition(pos);
+    setActiveNav(false);
+  }
+  console.log(scrollPosition);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className='header'>
@@ -32,9 +47,9 @@ export default function Header() {
           <div className={`header-container__navigate`}>
             
             <ul className={`header-container__navigate__ul ${"header-container__navigate__ul-"+activeMenu} `}>
-              <li><a href="#about">About</a></li>
-              <li><a href="#project">Project</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#about" onClick={() => setActiveNav(!setActiveNav)}>About</a></li>
+              <li><a href="#project" onClick={() => setActiveNav(!setActiveNav)}>Project</a></li>
+              <li><a href="#contact" onClick={() => setActiveNav(!setActiveNav)}>Contact</a></li>
             </ul>
 
             <div>

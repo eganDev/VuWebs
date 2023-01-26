@@ -71,7 +71,7 @@ export default function Footer() {
         </div>
         <div className='footer-back'>
             <div className='footer-back__content'>
-                <p>© Website is built based on reference and redesigned by VuVV</p>
+                <p>© Website is built based on reference and redesigned by VuVu</p>
             </div>
         </div>
     </div>
