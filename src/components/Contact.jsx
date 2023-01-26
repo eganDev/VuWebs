@@ -3,12 +3,13 @@ import React from 'react';
 import "../sass/Contact.scss"
 import { MdLocationOn, MdEmail, MdOutgoingMail } from "react-icons/md";
 import { BsFillTelephoneFill, BsFillTelephoneForwardFill } from "react-icons/bs";
+import { ImFacebook2, ImLinkedin } from "react-icons/im";
 import Aos from 'aos';
 
 const Contact = () => {
     Aos.init();
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className='contact-container'>
                 <div className='contact-header'>
                     <h1>CONTACT</h1>
@@ -37,14 +38,31 @@ const Contact = () => {
                                 Send Email
                             </button>
                         </div>
-                        <div className='contact-info__boxc'>
+                        <div className='contact-info__boxc reverse-bg'>
                             <h3>Talk to me?</h3>
                             <p>To easily find out more information about me, as well as exchange jobs. Call and talk to me about your business!</p>
-                            <button onlick={() => window.open("tel:0356611341")}>
+                            <button onClick={() => window.open("tel:+84356611341")}>
                                 <BsFillTelephoneForwardFill className='icon-2'></BsFillTelephoneForwardFill>
                                 Go to Phone
                             </button>
                         </div>
+
+                    </div>
+                    <div className='contact-info__other'  data-aos="fade-up">
+                        <div className='contact-info__other__detail'>
+                           <div className='contact-info__other__text'>
+                                <h3>Otherwise...</h3>
+                                <p>You can contact me through Facebook or Linkedin!</p>   
+                           </div>
+                           <div className='contact-info__other__button'>
+                                <button type=""
+                                onClick={() => window.open("https://www.facebook.com/VanVu.070403", '_blank')}
+                                ><ImFacebook2 className='icon-3'></ImFacebook2>Facebook</button>
+                                <button type=""
+                                 onClick={() => window.open("https://www.linkedin.com/in/vu-vu-26b748223/", '_blank')}
+                                ><ImLinkedin className='icon-3'></ImLinkedin>Linkedin</button>
+                            </div> 
+                        </div>    
                     </div>
                 </div>
             </div>

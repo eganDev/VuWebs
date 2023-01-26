@@ -38,16 +38,16 @@ export default function Header() {
             </ul>
 
             <div>
-              <a href="#a"><BsFacebook></BsFacebook></a>
+              <a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/VanVu.070403"><BsFacebook></BsFacebook></a>
             </div>
             <div>
-              <a href="#a"> <BsGithub></BsGithub></a>
+              <a target={"_blank"} rel="noreferrer" href="https://github.com/eganDev"> <BsGithub></BsGithub></a>
             </div>
             <div>
-              <a href="#a"><BsLinkedin></BsLinkedin></a>
+              <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/vu-vu-26b748223/"><BsLinkedin></BsLinkedin></a>
             </div>
             <div>
-              <a href="#a"><GrMail></GrMail></a>
+              <a target={"_blank"} rel="noreferrer" href="mailto:vuvo070403@gmail.com"><GrMail></GrMail></a>
             </div>
 
           </div>
