@@ -171,6 +171,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
             @include mobile {
                 width: 95vw;
             }
+            margin-top: -10px;
             &__detail {
                 width: 100%;
                 background-image: linear-gradient(to right, rgb(176, 2, 176), $organce, rgb(176, 2, 176));
