@@ -2,7 +2,7 @@ import React from 'react';
 
 import "../sass/Contact.scss"
 import { MdLocationOn, MdEmail, MdOutgoingMail } from "react-icons/md";
-import { BsFillTelephoneFill } from "react-icons/bs";
+import { BsFillTelephoneFill, BsFillTelephoneForwardFill } from "react-icons/bs";
 import Aos from 'aos';
 
 const Contact = () => {
@@ -41,7 +41,7 @@ const Contact = () => {
                             <h3>Talk to me?</h3>
                             <p>To easily find out more information about me, as well as exchange jobs. Call and talk to me about your business!</p>
                             <button onlick={() => window.open("tel:0356611341")}>
-                                <MdOutgoingMail className='icon-1'></MdOutgoingMail>
+                                <BsFillTelephoneForwardFill className='icon-2'></BsFillTelephoneForwardFill>
                                 Go to Phone
                             </button>
                         </div>

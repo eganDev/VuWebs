@@ -96,7 +96,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
             width: 980px;
             height: fit-content;
             padding: 15px;
-            background: #ccc;
+            // background: #ccc;
             display: flex;
             justify-content: space-between;
             @include mobile {
@@ -152,6 +152,11 @@ $color-pick: rgba(225, 225, 225, 0.05);
     color: $organce;
     &-1 {
         font-size: 20px;;
+        color: red;
+        margin-right: 10px;
+    }
+    &-2 {
+        font-size: 15px;;
         color: red;
         margin-right: 10px;
     }
