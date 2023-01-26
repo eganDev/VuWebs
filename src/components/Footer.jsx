@@ -5,9 +5,11 @@ import { MdMail,  } from "react-icons/md";
 import { BsFillTelephoneFill, BsFacebook, BsGithub  } from "react-icons/bs";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { IoIosPin } from "react-icons/io";
+import Aos from 'aos';
 export default function Footer() {
+    Aos.init()
   return (
-    <div className='footer'>
+    <div className='footer' data-aos='fade-up'>
         <div className='footer-container'>
             <div className='footer-container__info'>
                 <h3>Vu's personal websites</h3>
