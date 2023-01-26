@@ -32,7 +32,7 @@ const Contact = () => {
                         <div className='contact-info__boxc'>
                             <h3>Mail to me?</h3>
                             <p>If my experience can contribute to your business, email is the best medium to communicate with me!</p>
-                            <button>
+                            <button onClick={() => window.open("mailto:vuvo070403@gmail.com")}>
                                 <MdOutgoingMail className='icon-1'></MdOutgoingMail>
                                 Send Email
                             </button>
@@ -40,7 +40,7 @@ const Contact = () => {
                         <div className='contact-info__boxc'>
                             <h3>Talk to me?</h3>
                             <p>To easily find out more information about me, as well as exchange jobs. Call and talk to me about your business!</p>
-                            <button>
+                            <button onlick={() => window.open("tel:0356611341")}>
                                 <MdOutgoingMail className='icon-1'></MdOutgoingMail>
                                 Go to Phone
                             </button>
