@@ -57,6 +57,75 @@ $color-pick: rgba(225, 225, 225, 0.05);
             }
 
         }
-
     }
+    &-info {
+        width: 980px;
+        height: fit-content;
+        // background-color: orange;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include mobile {
+            width: 95vw;
+        }
+        &__box {
+            width: 980px;
+            height: fit-content;
+            // background-color: aliceblue;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            @include mobile {
+                width: 95vw;
+            }
+            &__info {
+                display: flex;
+                font-family: 'Source Sans Pro', sans-serif;
+                margin: 5px 0px 5px 0px;
+                p{
+                    font-size: 18px;
+                    margin-left: 10px;
+                    color: black;
+                }
+            }
+        }
+        &__connect {
+            width: 980px;
+            height: fit-content;
+            padding: 15px;
+            background: #ccc;
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+                width: 95vw;
+            }
+        }
+        &__boxc {
+            width: calc(930px/2);
+            height: fit-content;
+            background: blanchedalmond;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            h3 {
+                font-size: 26px;
+                margin-bottom: 10px;
+            }
+            p {
+                text-align: center;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 18px;    
+            }
+        }
+    }
+ }
+
+ .icon {
+    font-size: 20px;
+    color: $organce;
  }

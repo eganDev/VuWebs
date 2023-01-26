@@ -26,7 +26,7 @@ const Banner = () => {
                             Front-end developer
                             <br />
                             <span><span>
-                                 Who are meticulous and creative in works, use new technologies for projects and focus on clean code and efficiency.
+                            Who are meticulous and creative in work, using new technologies for projects, focusing on clean code and efficiency.
                             </span></span>
                         </p>
                     </div>
