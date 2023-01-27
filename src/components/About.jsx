@@ -4,6 +4,7 @@ import "../sass/About.scss"
 import INFO_DATA from "../data/INFO_DATA"
 import VuAvt from "../asset/vuavt.jpg"
 import Languages from './Languages'
+import cv from "../asset/CV/Vu-CV.pdf"
 import AOS from 'aos'
 
 export default function About() {
@@ -48,7 +49,8 @@ export default function About() {
                 <div className='about-container-info-cv'>
                   <div className='about-container-info-cv-dl'>
                     <a  className='about-container-info-cv-dl_style'
-                    href={""}
+                    href={cv}
+                    download
                     ><p>Download CV</p></a>
                   </div>
                 </div>

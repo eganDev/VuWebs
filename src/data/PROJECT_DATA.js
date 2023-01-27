@@ -2,14 +2,14 @@ const PROJECT_DATA = [
     {
         title: "Lyrics",
         tech: ["ReactJs", "Tailwindcss", "Redux", "Axios", "Responsive"],
-        desc: "A Shazam based music app made for music enjoyment",
+        desc: "Music application built on top of SHAZAM API, providing a music experience with many popular songs.",
         image: "music",
         link: "#"
     },
     {
         title: "Note-Pad Taking",
         tech: ["ReactJs", "Tailwindcss"],
-        desc:  "A Note App that makes it easy for everyone to take notes",
+        desc:  "For easy note-taking, the Note-pad app was created for this. Intuitive interface, easy to use and many features.",
         image: "note",
         link: "https://egandev.github.io/NOTE-PAD/"
     },
