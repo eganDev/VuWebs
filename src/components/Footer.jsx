@@ -45,7 +45,7 @@ export default function Footer() {
                         <p>Gmail</p>
                     </div>
                     <div className='footer__contact__items'
-                    onClick = {() => window.open("https://github.com/eganDev", "_blank")}>
+                    onClick = {() => window.open("https://github.com/VuVuDev", "_blank")}>
                         <BsGithub className='icon-footer'></BsGithub>
                         <p>Github</p>
                     </div>

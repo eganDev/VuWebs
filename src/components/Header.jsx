@@ -56,7 +56,7 @@ export default function Header() {
               <a target={"_blank"} rel="noreferrer" href="https://www.facebook.com/VanVu.070403"><BsFacebook></BsFacebook></a>
             </div>
             <div>
-              <a target={"_blank"} rel="noreferrer" href="https://github.com/eganDev"> <BsGithub></BsGithub></a>
+              <a target={"_blank"} rel="noreferrer" href="https://github.com/VuVuDev"> <BsGithub></BsGithub></a>
             </div>
             <div>
               <a target={"_blank"} rel="noreferrer" href="https://www.linkedin.com/in/vu-vu-26b748223/"><BsLinkedin></BsLinkedin></a>

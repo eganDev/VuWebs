@@ -11,21 +11,21 @@ const PROJECT_DATA = [
         tech: ["ReactJs", "Tailwindcss"],
         desc:  "For easy note-taking, the Note-pad app was created for this. Intuitive interface, easy to use and many features.",
         image: "note",
-        link: "https://egandev.github.io/NOTE-PAD/"
+        link: "https://vuvudev.github.io/NOTE-PAD/"
     },
     {
         title: "Frog Lentgh Unit",
         tech: ["ReactJs", "Tailwindcss", "Responsive"],
         desc: "A web application created to convert units of length, color and promote friendliness.",
         image: "froglengthunit",
-        link: "https://egandev.github.io/FrogLengthUnit/"
+        link: "https://vuvudev.github.io/FrogLengthUnit/"
     },
     {
         title: "Macintosh clone",
         tech: ["HTML", "CSS", "Javascript"],
         desc: "A website created to consolidate knowledge and learn more about front-end. Simulate an application store of a Macintosh computer.",
         image: "macintosh",
-        link: "https://egandev.github.io/Vu_clone_Macintosh/",
+        link: "https://vuvudev.github.io/Vu_clone_Macintosh/",
     }
 ]
 
