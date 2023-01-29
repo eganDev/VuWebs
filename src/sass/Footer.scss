@@ -1,6 +1,7 @@
 $organce: #d86213;
 $mobile-width: 480px;
 $tablet-width: 768px;
+$desktop-width: 1024px; 
 $color-pick: rgba(225, 225, 225, 0.05);
 
 
@@ -25,6 +26,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
     @include mobile {
         // height: 500px;
     }
+    @include tablet {
+        // display: none;
+    }
     &-container {
         width: 980px;
         height: fit-content;
@@ -32,6 +36,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
         @include mobile {
             width: 95vw;
             flex-direction: column;
+        }
+        @include tablet {
+            width: 95vw;
         }
         &__info {
             width: 400px;
@@ -81,6 +88,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
         @include mobile {
             padding: 0px 0px 0px 0px;
         }
+        @include tablet {
+            padding-left: 0px;
+        }
         &__header {
             color: white;
             font-size: 20px;
@@ -115,6 +125,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
             }
         }
         &__page {
+            @include tablet {
+                margin-left: 60px;
+            }
             &__links {
                 color: white;
                 font-size: 20px;
@@ -123,6 +136,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
                 @include mobile{
                     font-size: 14px;
                     margin-left: 70px;
+                }
+                @include tablet {
+                
                 }
             }
             list-style: none;

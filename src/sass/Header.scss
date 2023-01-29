@@ -1,6 +1,7 @@
 $organce: #DC7633;
 $mobile-width: 480px;
 $tablet-width: 768px;
+$desktop-width: 1024px; 
 $color-pick: rgba(225, 225, 225, 0.05);
 
 
@@ -39,6 +40,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
         z-index: 10;
         background: rgba(0, 0, 0, 0.685);
     }
+    @include mobile {
+        z-index: 10;
+    }
     &-container {
         width: 980px;
         height: full;
@@ -46,6 +50,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
         align-items: center;
         justify-content: space-between;
         user-select: none;
+        @include tablet {
+            width: 100vw;
+        }
         &__logo {
             pointer-events: none;
             width: 45px;

@@ -3,6 +3,7 @@ $gray-low: #E1E1E1;
 $organce: #DC7633;
 $mobile-width: 480px;
 $tablet-width: 768px;
+$desktop-width: 1024px; 
 
 
 @mixin mobile { @media (max-width: #{$mobile-width - 1px}) {     
@@ -24,7 +25,7 @@ $tablet-width: 768px;
     justify-content: center;
     // margin-top: 55px;
     // pointer-events: none;
-    
+    @include tablet {}
     animation: vb 0.5s linear 0s forwards;
         @keyframes vb {
             0% {opacity: 0;}
@@ -44,12 +45,19 @@ $tablet-width: 768px;
             width: 100%;
             height: auto;
         }
-        
+        // @media (min-aspect-ratio: 16/5) {
+        //     width: 100%;
+        //     height: auto;
+        // }
     }
 
     @include mobile {
         width: 100vw;
         height: 460px
+    }
+    @include tablet {
+        width: 100vw;
+        height: 520px;
     }
 
     &-container {
@@ -62,6 +70,8 @@ $tablet-width: 768px;
         @include mobile {
             display: flex;
             flex-direction: column;
+        }
+        @include tablet {
         }
         &-content {
             width: 50%;
@@ -102,6 +112,11 @@ $tablet-width: 768px;
                     top: -160px;
                     margin-left: 0px;
                     margin-top: -180px;
+                }
+                @include tablet {
+                    transform: scale(0.7);
+                    position: absolute;
+                    margin-top: -100px;
                 }
                 p {
                     text-transform: uppercase;
@@ -163,7 +178,12 @@ $tablet-width: 768px;
                     width: 240px;
                     top: 260px;
                     margin-right: 200px;
-
+                }
+                @include tablet {
+                    transform: scale(0.75);
+                    position: absolute;
+                    width: 420px;
+                    top: 320px;
                 }
                 p {
                     margin-left: 70px;
@@ -180,6 +200,9 @@ $tablet-width: 768px;
                         color: $organce;
                     }
                     @include mobile {
+                        color: #DC7633;
+                    }
+                    @include tablet {
                         color: #DC7633;
                     }
                     span {
@@ -226,6 +249,9 @@ $tablet-width: 768px;
                     }
                 }
             }
+            @include tablet {
+                width: 220px;
+            }
             img {
                 width: 450px;
                 height: 100%;
@@ -254,6 +280,9 @@ $tablet-width: 768px;
                     margin-left: 20px;
                     animation: none;
                     opacity: 1;
+                }
+                @include tablet {
+                    width: 220px;
                 }
             }
         }

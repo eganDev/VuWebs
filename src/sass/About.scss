@@ -1,6 +1,7 @@
 $organce: #d86213;
 $mobile-width: 480px;
 $tablet-width: 768px;
+$desktop-width: 1024px; 
 $color-pick: rgba(225, 225, 225, 0.05);
 
 
@@ -20,7 +21,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
     // background: #000;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column;;
     &-container {
         width: 980px;
         height: fit-content;
@@ -34,7 +35,10 @@ $color-pick: rgba(225, 225, 225, 0.05);
             padding-top: 0px;
             padding-bottom: 0px;
         }
-        
+        @include tablet {
+            width: 95vw;
+            // display: none;
+        }
         div {
             h1 {
                 user-select: none;
@@ -89,6 +93,9 @@ $color-pick: rgba(225, 225, 225, 0.05);
                 padding-top: 20px;
                 width: 0;
             }
+            @include tablet {
+                width: 95%;
+            }
             &-main {
                 display: flex;
             }
@@ -109,6 +116,10 @@ $color-pick: rgba(225, 225, 225, 0.05);
                     @include mobile{
                         width: 140px;
                         height: 170px;
+                    }
+                    @include tablet {
+                        width: 200px;
+                        height: 220px;
                     }
                     img {
                         width: 100%;
@@ -151,6 +162,10 @@ $color-pick: rgba(225, 225, 225, 0.05);
                             padding-left: 10px;
                             font-weight: normal;
                         }
+                        @include tablet {
+                            width: 520px;
+                            color: black;
+                        }
                     }
                 }
             }
@@ -164,6 +179,10 @@ $color-pick: rgba(225, 225, 225, 0.05);
                     margin: 20px 0 0 0;
                     border-top: 2px solid $organce;
                     width: 95vw;
+                }
+                @include tablet {
+                    width: 95vw;
+                    margin: 20px 0 0 0;
                 }
                 &_title {
                     user-select: none;
@@ -185,6 +204,10 @@ $color-pick: rgba(225, 225, 225, 0.05);
                 @include mobile {
                     width: 95vw;
                     margin-top: 15px;
+                }
+                @include tablet {
+                    width: 95vw;
+
                 }
                 &-dl {
                     background-color: $organce;

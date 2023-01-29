@@ -42,7 +42,7 @@ export default function About() {
                   </div>
                   <div className='about-container-info-taglg'>
                       {INFO_DATA.map((value, index) => (
-                        <Languages value = {value} key = {index} ></Languages>
+                        <Languages value = {value} key = {index} ></Languages> 
                       ))}
                   </div>
                 </div>
