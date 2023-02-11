@@ -25,6 +25,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
     flex-direction: column;
     @include mobile {
         // height: 500px;
+        margin-top: 20px;
     }
     @include tablet {
         // display: none;

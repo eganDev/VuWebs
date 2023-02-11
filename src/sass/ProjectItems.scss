@@ -24,7 +24,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
   &-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 23px 0px 26px 0px;
     // flex-direction: row-reverse;
     @include mobile {
