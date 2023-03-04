@@ -53,6 +53,10 @@ $color-pick: rgba(225, 225, 225, 0.05);
         @include tablet {
             width: 100vw;
         }
+        @include mobile() {
+            width: 95vw;
+            justify-content: space-between;
+        }
         &__logo {
             pointer-events: none;
             width: 45px;
@@ -80,7 +84,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
         &__toggle {
             @include mobile{
                 position: absolute;
-                right: 5px;
+
                 width: 50px;
                 height: 50px;
                 // background-color: #fff;
@@ -88,6 +92,7 @@ $color-pick: rgba(225, 225, 225, 0.05);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                right: 5px;
                 &::before {
                     position: absolute;
                     content: '';

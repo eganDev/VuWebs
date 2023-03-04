@@ -64,7 +64,6 @@ export default function Header() {
             <div>
               <a target={"_blank"} rel="noreferrer" href="mailto:vuvo070403@gmail.com"><GrMail></GrMail></a>
             </div>
-
           </div>
 
       </div>
