@@ -23,7 +23,7 @@ export default function Header() {
     setScrollPosition(pos);
     setActiveNav(false);
   }
-  console.log(scrollPosition);
+  // console.log(scrollPosition);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll, { passive: true });
