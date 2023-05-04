@@ -1,10 +1,24 @@
 const PROJECT_DATA = [
     {
         title: "Lyrics",
-        tech: ["ReactJS", "Tailwind CSS", "Redux", "Axios", "Responsive"],
+        tech: ["ReactJS", "Tailwind CSS", "Vite","Redux", "Axios", "Responsive"],
         desc: "Music application built on top of SHAZAM API, providing a music experience with many popular songs.",
         image: "music",
         link: "#"
+    }, 
+    {
+        title: "Funny Choice", 
+        tech: ["ReactJS", "TypeScript", "Vite","Tailwind CSS", "Axios", "Responsive"],
+        desc: "A fun game that allows two players, by answering questions and getting results. This App is created for skill development purposes.",
+        image: "funny-multichoice",
+        link: "https://funny-multichoice-game.vercel.app/"
+    },
+    {
+        title: "YES-NO WTF",
+        tech: ["ReactJS", "TypeScript", "Vite", "Tailwind CSS", "Axios", "Responsive"],
+        desc: "A small app to practice programming skills. With the mechanism to choose the answers YES and NO with the number of choices and call the API to give the final result of the game.",
+        image: "yes-no",
+        link: "https://yes-no-game-react-ts.vercel.app/"
     },
     {
         title: "Note-Pad Taking",
@@ -34,7 +48,8 @@ const PROJECT_DATA = [
         desc: "A website created to consolidate knowledge and learn more about front-end. Simulate an application store of a Macintosh computer.",
         image: "macintosh",
         link: "https://vuvudev.github.io/Vu_clone_Macintosh/",
-    }
+    },
+    
 ]
 
 export default PROJECT_DATA
