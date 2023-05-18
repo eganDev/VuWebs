@@ -25,14 +25,14 @@ const PROJECT_DATA = [
         tech: ["ReactJS", "Tailwind CSS"],
         desc:  "For easy note-taking, the Note-pad app was created for this. Intuitive interface, easy to use and many features.",
         image: "note",
-        link: "https://vuvudev.github.io/NOTE-PAD/"
+        link: "https://vu-sudo.github.io/NOTE-PAD/"
     },
     {
         title: "Frog Lentgh Unit",
         tech: ["ReactJS", "Tailwind CSS", "Responsive"],
         desc: "A web application created to convert units of length, color and promote friendliness.",
         image: "froglengthunit",
-        link: "https://vuvudev.github.io/FrogLengthUnit/"
+        link: "https://vu-sudo.github.io/FrogLengthUnit/"
     },
     {
         title: "Landing Page",
@@ -47,7 +47,7 @@ const PROJECT_DATA = [
         tech: ["HTML", "CSS", "Javascript"],
         desc: "A website created to consolidate knowledge and learn more about front-end. Simulate an application store of a Macintosh computer.",
         image: "macintosh",
-        link: "https://vuvudev.github.io/Vu_clone_Macintosh/",
+        link: "https://vu-sudo.github.io/Vu_clone_Macintosh/",
     },
     
 ]
