@@ -1,11 +1,11 @@
 const PROJECT_DATA = [
-    {
-        title: "Lyrics",
-        tech: ["ReactJS", "Tailwind CSS", "Vite","Redux", "Axios", "Responsive"],
-        desc: "Music application built on top of SHAZAM API, providing a music experience with many popular songs.",
-        image: "music",
-        link: "#"
-    }, 
+    // {
+    //     title: "Lyrics",
+    //     tech: ["ReactJS", "Tailwind CSS", "Vite","Redux", "Axios", "Responsive"],
+    //     desc: "Music application built on top of SHAZAM API, providing a music experience with many popular songs.",
+    //     image: "music",
+    //     link: "#"
+    // }, 
     {
         title: "Funny Choice", 
         tech: ["ReactJS", "TypeScript", "Vite","Tailwind CSS", "Axios", "Responsive"],
